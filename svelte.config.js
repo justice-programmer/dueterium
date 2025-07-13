@@ -1,24 +1,8 @@
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
+export default defineConfig({
+  plugins: [svelte()]
+});
 
-/** @type {import('vite').UserConfig} */
-export default {
-  plugins: [svelte()],
-  lib: {
-    build: {
-      entry: './src/index.ts',
-      name: 'Dueterium',
-      fileName: 'dueterium',
-      formats: ['es', 'cjs']
-    },
-    rollupOptions: {
-      external: ['svelte'],
-      output: {
-        globals: {
-          svelte: 'Svelte'
-        }
-      }
-    }
-  }
-}
 

@@ -1,8 +1,17 @@
 {
-  "name": "dueterium",
-  "private": true,
-  "version": "0.0.0",
+  "name": "dueterium-ui",
+  "version": "0.1.0",
+  "description": "Dueterium is a minimalist, expressive Svelte component library built for fast development and beautiful layouts. Open to everyone, built for anything.",
   "type": "module",
+  "exports": {
+    ".": {
+      "svelte": "./src/index.ts",
+      "import": "./dist/dueterium-ui.es.js",
+      "require": "./dist/dueterium-ui.cjs.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "src"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,5 +25,8 @@
     "svelte-check": "^4.2.2",
     "typescript": "~5.8.3",
     "vite": "^7.0.4"
-  }
+  },
+  "keywords": ["svelte", "ui", "component-library", "dueterium", "neo", "barter"],
+  "author": "Suraadyksha",
+  "license": "MIT"
 }
