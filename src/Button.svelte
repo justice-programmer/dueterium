@@ -1,6 +1,6 @@
 <script lang="ts">
   export let type: string = "primary";
-  export let size: string = "large";
+  export let size: "small" | "large" | "large-horizontal" = "large";
   export let onClick: () => void = () => {
     console.log("Default button click");
   };

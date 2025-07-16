@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let type: string = "primary";
-  export let size: string = "large";
+  export let type: "sucsess" | "primary" = "primary";
+  export let size: "small" | "large" | "large-horizontal" = "large";
 </script>
 
 <div class={`${type} ${size}`}>

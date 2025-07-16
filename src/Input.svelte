@@ -6,7 +6,6 @@
 </script>
 
 <input
-  class="dueterium-input"
   {type}
   {placeholder}
   bind:value
@@ -14,16 +13,17 @@
 />
 
 <style>
-  .dueterium-input {
+  input {
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
     transition: border-color 0.2s ease;
     width: 100%;
-    border: 0;
-    cursor: pointer;
-    border-radius: 6px;
-    padding: 8px 12px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
   }
-  .dueterium-input:focus {
+
+  input:focus {
     border-color: rgb(105, 71, 168); /* Dueterium purple! */
     box-shadow: 0 0 0 2px rgba(105, 71, 168, 0.2);
   }
