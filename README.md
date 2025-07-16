@@ -1,8 +1,8 @@
 # Dueterium UI 🧬
 
-**Dueterium** is a minimal yet punchy Svelte component library handcrafted for fast development, clean layouts, and that sweet sweet NeoUI styling vibe.
+**Dueterium** is a minimal yet punchy Svelte component library handcrafted for fast development, clean layouts, and that sweet clean vibe.
 
-> Built with frustration, fixed with flair.
+> Built with elegance.
 
 ---
 
