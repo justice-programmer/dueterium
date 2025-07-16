@@ -4,6 +4,9 @@
     "types": ["svelte"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "emitDeclarationOnly": true,
     "module": "ESNext",
     "target": "ES2017",
     "moduleResolution": "Node",
@@ -12,7 +15,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
   },
-  "include": ["src/**/*"],
+  "include": ["src"],
   "exclude": ["node_modules", "dist"]
 }
 

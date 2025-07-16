@@ -2,6 +2,7 @@
   // Slot-based form wrapper — no built-in inputs or buttons
   export let onSubmit: () => void;
   export let heading: string = "Sign in";
+  // svelte-ignore export_let_unused
   export let width: string = "400px"; // For layout control
 </script>
 
