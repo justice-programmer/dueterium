@@ -19,5 +19,5 @@
 ## 📦 Installation
 
 ```bash
-npm install dueterium-ui
+npm install https://github.com/justice-programmer/dueterium.git
 ```
