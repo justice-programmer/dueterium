@@ -1,19 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": ["DOM", "ESNext"],
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-
-    // Output settings
     "declaration": true,
     "emitDeclarationOnly": true,
     "declarationDir": "./dist",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+
+
+    
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
