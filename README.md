@@ -1,4 +1,4 @@
-🧬 Deuterium
+# 🧬 Deuterium
 A lightweight and customizable UI component library for Svelte, designed to be adaptive, accessible, and themable across modern applications.
 Built for developers who value simplicity, flexibility, and clean design—without sacrificing functionality.
 
