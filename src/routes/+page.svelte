@@ -4,6 +4,7 @@
   import NavBar from "$lib/Card.svelte";
   import Input from "$lib/Input.svelte";
   import Form from "$lib/ui-template-components/Form.svelte";
+  import ProfileCard from "$lib/ui-template-components/ProfileCard.svelte";
   let name: string;
   let desc: string;
   function click(data: string) {
@@ -23,11 +24,16 @@
   placeholder2="Description"
   submit="Sumbit"
   onSubmit={(data) => updData(data)}
+  title="Example Form"
 ></Form>
 
 <br />
 
-<Card variant="elevated">{name} | {desc}</Card>
+<ProfileCard
+  profileTitle={name}
+  profileDescription={desc}
+  profileImgUrl="/image.png"
+></ProfileCard>
 
 <style>
   :root {

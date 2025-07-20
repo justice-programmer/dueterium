@@ -3,6 +3,7 @@
   import Input from "$lib/Input.svelte";
   import Button from "$lib/Button.svelte";
   interface TemplateProps {
+    title?: string;
     placeholder1: string;
     placeholder2: string;
     type1: "email" | "text" | "color" | "date" | "tel";
@@ -25,6 +26,7 @@
     type2,
     submit,
     onSubmit,
+    title,
   }: TemplateProps = $props();
   const input1 = writable("");
   const input2 = writable("");
@@ -37,10 +39,9 @@
       handleSubmit();
     }}
   >
+    <h1>{title}</h1>
     <Input type={type1} placeholder={placeholder1} bind:value={$input1}></Input>
-    <br />
     <Input type={type2} placeholder={placeholder2} bind:value={$input2}></Input>
-    <br />
     <Button
       type="primary"
       size="horizontal-large"
@@ -54,7 +55,6 @@
     display: grid;
     place-items: center;
     min-height: 100vh;
-    background: #f4f4f4; /* soft contrast against white form */
     padding: 32px;
     gap: 24px; /* or 24px, for comfortable spacing */
   }
@@ -70,6 +70,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    transition: transform 0.2s ease;
   }
 
   form:hover {
