@@ -1,3 +1,7 @@
+# WARNING
+THIS REPOSITORY IS A OLD SVELTE REPO FOR DUETRIUM. FOR A NEW VERSION WITH NEXT.JS PLEASE GO TO dueterium-next
+
+
 # 🧬 Deuterium
 A lightweight and customizable UI component library for Svelte, designed to be adaptive, accessible, and themable across modern applications.
 Built for developers who value simplicity, flexibility, and clean design—without sacrificing functionality.
